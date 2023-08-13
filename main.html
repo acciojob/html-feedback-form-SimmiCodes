@@ -4,12 +4,64 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+      table,
+      th,
+      td {
+        padding: 5px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
 </head>
 
 <body>
+	<form action="#" method="post">
 	<!-- the entire body must be written by student -->
+	 <table border="1" >
+        <tr>
+        <th>Element</th>
+        <th>ID</th>
+		<th>Type</th>
+		<th>Attributes</th>
+		<th>Label Required</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>name</td>
+		<td>Text</td>
+        <td>minlength="3", maxlength="50", required</td>
+		<td>Yes</td>
+    </tr>
+	<tr>
+        <td>Portfolio</td>
+        <td>portfolio</td>
+		<td>Url</td>
+        <td>required</td>
+		<td>Yes</td>
+    </tr>
+
+	<tr>
+        <td>Favorite Color</td>
+        <td>favColor</td>
+		<td>Color</td>
+        <td>N/A</td>
+		<td>Yes</td>
+    </tr>
+
+	<tr>
+        <td>Likeness</td>
+        <td>likeness</td>
+		<td>Range</td>
+        <td>min="1", max="100"</td>
+		<td>Yes</td>
+    </tr>
+    
+    </table>
+      
     <script type="text/javascript" src="./script.js">
 </script>
+	</form>
 
 </body>
 
