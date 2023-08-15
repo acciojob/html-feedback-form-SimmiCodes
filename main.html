@@ -4,61 +4,25 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-      table,
-      th,
-      td {
-        padding: 5px;
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    </style>
 </head>
 
 <body>
-	<form action="input#name" method="post">
-	<!-- the entire body must be written by student -->
-	<heading>Feedback Form</heading>
-	 <table border="1" >
-        <tr>
-        <th>Element</th>
-        <th>ID</th>
-		<th>Type</th>
-		<th>Attributes</th>
-		<th>Label Required</th>
-    </tr>
-    <tr>
-        <td>Name</td>
-        <td>name</td>
-		<td>Text</td>
-        <td>minlength="3", maxlength="50", required</td>
-		<td>Yes</td>
-    </tr>
-	<tr>
-        <td>Portfolio</td>
-        <td>portfolio</td>
-		<td>Url</td>
-        <td>required</td>
-		<td>Yes</td>
-    </tr>
+	<h1>Feedback Form</h1>
+    <form action=# method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="50" placeholder="Enter your name"><br><br>
 
-	<tr>
-        <td>Favorite Color</td>
-        <td>favColor</td>
-		<td>Color</td>
-        <td>N/A</td>
-		<td>Yes</td>
-    </tr>
+		<label for="portfolio">Portfolio</label>
+        <input type="url" id="portfolio" name="portfolio" required ><br><br>
 
-	<tr>
-        <td>Likeness</td>
-        <td>likeness</td>
-		<td>Range</td>
-        <td>min="1", max="100"</td>
-		<td>Yes</td>
-    </tr>
-    
-    </table>
+		<label for="favColor">Favorite Color</label>
+        <input type="color" id="favColor" name="favColor" required ><br><br>
+
+		<label for="likeness">Portfolio</label>
+        <input type="range" id="likeness" name="likeness" required minlength="1" maxlength="100" ><br><br>
+
+		
+
       
     <script type="text/javascript" src="./script.js">
 </script>
